@@ -146,8 +146,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 lunar_et_calendar.setHint("");
-                /*Calendar c = Calendar.getInstance();
-                DatePickerDialog dg = new DatePickerDialog(MainActivity.this,AlertDialog.THEME_HOLO_LIGHT,null,c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH));*/
+
                 dg.setButton(DialogInterface.BUTTON_POSITIVE,"确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
