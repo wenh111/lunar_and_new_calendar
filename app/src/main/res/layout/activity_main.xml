@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/new_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新历转旧历"
+            android:textColor="	#000000"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/new_ly_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/new_calendar"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/new_et_calendar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_select"
+                android:gravity="center"
+                android:hint="请选择日期" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:background="@drawable/right" />
+
+            <EditText
+                android:id="@+id/new_tv_calendar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_select"
+                android:textSize="10sp"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/new_but_calendar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_background"
+                android:text="转换" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lunar_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_ly_calendar"
+            android:layout_marginLeft="10dp"
+            android:text="旧历转新历"
+            android:textColor="	#000000"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/lunar_ly_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/lunar_calendar"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <EditText
+                android:id="@+id/lunar_et_calendar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="请选择日期"
+                android:background="@drawable/edittext_select" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:background="@drawable/right" />
+
+            <EditText
+                android:id="@+id/lunar_tv_calendar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_select"
+                android:layout_marginRight="10dp"
+                android:textColor="#000000"/>
+            <Button
+                android:id="@+id/lunar_but_calendar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="转换"
+                android:background="@drawable/button_background"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
